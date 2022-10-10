@@ -28,6 +28,34 @@
     font-size: 3rem;
     margin-bottom: 5px;
   }
+
+  .container-counter{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .container-counter p{
+    font-size: 20px;
+    font-weight: 800;
+    padding: 0 30px;
+  }
+
+  button{
+    background-color: aqua;
+    filter: drop-shadow(0 -1px 10px rgb(0, 0, 0, 0.3));  
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+    margin: 5px 10px;
+    border-radius: .5rem;
+  }
+
+  button:hover{
+    transition: .5s;
+    transform: scale(1.1, 1.1);
+    background-color: aquamarine;
+  }
   
   .container{
     display: flex; 
@@ -40,19 +68,17 @@
 
   .card-grid {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
   }
   
   .card {
     text-align: center;
-    width: 50vh;
+    max-width: 50vh;
     border-radius: 10px;
     filter: drop-shadow(0 0 0.75rem rgb(0,0,0,.7));
     margin-bottom: 20px;
     margin-right: 20px;
-    padding: 5px;
   }
   
   .card p {
